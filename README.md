@@ -37,7 +37,7 @@ We're now **reborn for the future** with:
 
 ## 🖼 Community Look & Feel
 
-![casterclub-community-bg.jpeg)
+![casterclub-community-bg.png)
 
 *(XP + SHOUTcast inspired aesthetic for the next generation of creators)*
 
