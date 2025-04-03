@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CasterClub - Intelligent Broadcast Services" />
+  <title>CasterClub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #222;
+    }
+    header {
+      background-color: #004080;
+      padding: 1.5rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background-color: #d7e6ff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #004080;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+    }
+    .modal-content {
+      background: #fff;
+      max-width: 90%;
+      height: 90%;
+      margin: 2% auto;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .modal-content iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px; right: 10px;
+      background: #004080;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CasterClub</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#community">Community</a>
+      <a href="#" onclick="openModal()">README</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="casterclub-community-bg.png" alt="CasterClub Hero Banner" />
+  </section>
+
+  <section id="about" class="section">
+    <h2>About CasterClub</h2>
+    <p><strong>CasterClub</strong> is a legacy internet broadcasting community and service provider, empowering creators, hobbyists, and professionals with tools, support, and infrastructure for webcasting, podcasting, and radio streaming. From SHOUTcast and Icecast to next-gen AI-enhanced audio/video pipelines, we are the community where internet radio starts and thrives.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <ul>
+      <li>📡 Custom Icecast2 & SHOUTcast Provisioning</li>
+      <li>🎛 AI Playlist Automation, Metadata Tagging</li>
+      <li>📺 Multi-platform Simulcasting (YouTube, Twitch, RTMP)</li>
+      <li>🧠 VJ/DJ AI Agents, Visual Scheduler Tools</li>
+      <li>👥 Community Streaming Portals</li>
+    </ul>
+  </section>
+
+  <section id="community" class="section">
+    <h2>Community</h2>
+    <p>Join us on <a href="https://facebook.com/officialcasterclub" target="_blank">Facebook</a> or collaborate through our open-source projects on <a href="https://github.com/CasterClub/CasterClub" target="_blank">GitHub</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CasterClub — It's Where Internet Radio Starts.</p>
+  </footer>
+
+  <div id="readmeModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">Close</button>
+      <iframe src="README.html"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('readmeModal').style.display = 'block';
+    }
+    function closeModal() {
+      document.getElementById('readmeModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
